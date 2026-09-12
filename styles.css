@@ -300,3 +300,41 @@ footer{max-width:1600px;margin:0 auto;background:#fff}
   .case-study,.brands{display:none}
   .cta{padding-top:34px}
 }
+
+
+/* Fix: Phase 7 benchmark markup also needs desktop styling */
+.mini-benchmark{display:grid;gap:14px;margin-top:30px}
+.mini-row{
+  display:grid;
+  grid-template-columns:140px 1fr 66px;
+  gap:16px;
+  align-items:center;
+  padding:14px 0;
+  border-bottom:1px solid #262a31;
+  font-size:13px
+}
+.mini-row:last-child{border-bottom:0}
+.mini-row>span{font:800 13px Manrope,sans-serif;white-space:nowrap}
+.mini-row>i{height:10px;background:#292d34;border-radius:999px;overflow:hidden}
+.mini-row>i b{display:block;height:100%;background:#747b86;border-radius:inherit}
+.mini-row.winner>i b{background:linear-gradient(90deg,#f9ce34,#ee2a7b 55%,#6228d7)}
+.mini-row>strong{text-align:right;font:800 15px Manrope,sans-serif}
+.mini-row.winner>strong{color:var(--lime)}
+.hero-proof.benchmark-hero{
+  min-height:420px;
+  justify-content:center;
+  border-radius:18px;
+  box-shadow:0 24px 70px #00000022
+}
+.hero-proof.benchmark-hero .proof-label{margin-bottom:2px}
+.hero-proof.benchmark-hero .benchmark-note{
+  margin-top:22px;
+  padding-top:16px;
+  border-top:1px solid #262a31;
+  color:#9298a2
+}
+
+@media(max-width:700px){
+  .mini-benchmark{margin-top:0}
+  .hero-proof.benchmark-hero{min-height:0;box-shadow:none}
+}

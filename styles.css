@@ -260,3 +260,43 @@ footer{max-width:1600px;margin:0 auto;background:#fff}
   .shortcut-copy small{font-size:9px}
   .shortcut-cta{font-size:10px}
 }
+
+
+/* Phase 7: minimal Instagram-native portfolio */
+@media(max-width:700px){
+  .hero{padding-bottom:8px}
+  .hero h1{font-size:34px;margin-top:2px}
+  .hero-intro{max-width:330px}
+  .hero-proof.benchmark-hero{background:#fff;color:#111;border:1px solid #efefef;border-radius:14px;padding:16px;margin-top:4px}
+  .hero-proof .proof-label{color:#737373;font-size:9px;margin-bottom:14px}
+  .mini-benchmark{display:grid;gap:13px}
+  .mini-row{display:grid;grid-template-columns:94px 1fr 44px;gap:10px;align-items:center;font-size:10px}
+  .mini-row>span{font-weight:600;white-space:nowrap}
+  .mini-row>i{height:7px;background:#efefef;border-radius:99px;overflow:hidden}
+  .mini-row>i b{display:block;height:100%;background:#c7c7c7;border-radius:99px}
+  .mini-row.winner>i b{background:linear-gradient(90deg,#ff7a00,#ff2d55,#8a3ffc)}
+  .mini-row.winner>strong{color:#0095f6}
+  .mini-row>strong{text-align:right;font-size:11px}
+  .hero-proof .benchmark-note{color:#737373;margin:14px 0 0;padding-top:12px;border-top:1px solid #efefef;font-size:9px}
+
+  .property-shortcuts{padding:10px 0;border-bottom:8px solid #f7f7f7}
+  .property-shortcut{grid-template-columns:52px 1fr auto;padding:11px 14px}
+  .shortcut-avatar{width:52px;height:52px}
+  .shortcut-copy strong{font-size:13px}
+  .shortcut-copy small{font-size:10px;color:#737373}
+  .shortcut-cta{background:#0095f6;color:#fff;padding:7px 10px;border-radius:8px;font-size:9px}
+
+  .work{padding-top:16px;padding-bottom:0}
+  .work .section-heading{padding-top:10px}
+  .work .section-heading h2{font-size:25px}
+  .work .section-heading>p{display:none}
+  .feed-header{display:none}
+  .post-tabs{justify-content:space-around;padding:0;gap:0}
+  .post-tabs span{width:33.333%;height:44px;display:grid;place-items:center}
+  .post-tabs .active{border-bottom:1px solid #111}
+  .insta-grid{grid-template-columns:repeat(3,1fr)}
+  .insta-grid .work-item:nth-child(n+4){display:none}
+
+  .case-study,.brands{display:none}
+  .cta{padding-top:34px}
+}

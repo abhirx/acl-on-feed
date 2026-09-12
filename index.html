@@ -3,12 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    if (location.pathname === '/acl-on-feed') {
+      location.replace('/acl-on-feed/' + location.search + location.hash);
+    }
+  </script>
   <meta name="description" content="Anvith Creative Labs is an independent digital media company building high-attention communities and brand-led storytelling in India." />
   <title>Anvith Creative Labs</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=12" />
+  <link rel="stylesheet" href="/acl-on-feed/styles.css?v=16-refresh-stable" />
+<style>
+    html,body{margin:0;max-width:100%;overflow-x:hidden}
+    img{display:block;max-width:100%;height:auto}
+    .profile-avatar,.bench-avatar{display:block;overflow:hidden;border-radius:999px;flex:none}
+    .profile-avatar{width:62px;height:62px}
+    .bench-avatar{width:38px;height:38px}
+    .profile-avatar img,.bench-avatar img{width:100%;height:100%;object-fit:cover;border-radius:999px}
+    @media(max-width:760px){
+      .profile-avatar{width:48px;height:48px}
+      .bench-avatar{width:34px;height:34px}
+    }
+  </style>
 </head>
 <body>
   <div class="app-shell">
@@ -60,7 +77,7 @@
         <div class="section-head"><h2>Our Media Brands</h2><a href="#brands">View all →</a></div>
         <div class="brand-grid">
           <a class="profile-card" href="#india-unedited">
-            <span class="profile-avatar"><img src="assets/indians-unedited.jpg" alt="India Unedited"></span>
+            <span class="profile-avatar"><img src="/acl-on-feed/assets/indians-unedited.jpg" alt="India Unedited"></span>
             <span class="profile-copy"><b>India Unedited</b><small>@india.unedited</small></span>
             <span class="profile-arrow">›</span>
             <span class="profile-stat"><b>383K</b><small>followers</small></span>
@@ -69,7 +86,7 @@
           </a>
 
           <a class="profile-card" href="#podcast-feed">
-            <span class="profile-avatar"><img src="Logo Transparent.png" alt="The Podcast Feed"></span>
+            <span class="profile-avatar"><img src="/acl-on-feed/Logo%20Transparent.png" alt="The Podcast Feed"></span>
             <span class="profile-copy"><b>The Podcast Feed</b><small>@thepodcastfeed.in</small></span>
             <span class="profile-arrow">›</span>
             <span class="profile-stat"><b>92K</b><small>followers</small></span>
@@ -86,19 +103,19 @@
         </div>
         <div class="benchmark-rows">
           <div class="bench-item top">
-            <span class="bench-avatar"><img src="assets/indians-unedited.jpg" alt="India Unedited"></span>
+            <span class="bench-avatar"><img src="/acl-on-feed/assets/indians-unedited.jpg" alt="India Unedited"></span>
             <b>India Unedited</b>
             <span class="bench-track"><i style="width:100%"></i></span>
             <strong>3.29%</strong>
           </div>
           <div class="bench-item">
-            <span class="bench-avatar"><img src="assets/the-tatva.jpg" alt="The Tatva"></span>
+            <span class="bench-avatar"><img src="/acl-on-feed/assets/the-tatva.jpg" alt="The Tatva"></span>
             <b>The Tatva</b>
             <span class="bench-track"><i style="width:76.6%"></i></span>
             <strong>2.52%</strong>
           </div>
           <div class="bench-item">
-            <span class="bench-avatar"><img src="assets/indians.jpg" alt="INDIANS"></span>
+            <span class="bench-avatar"><img src="/acl-on-feed/assets/indians.jpg" alt="INDIANS"></span>
             <b>INDIANS</b>
             <span class="bench-track"><i style="width:18.8%"></i></span>
             <strong>0.62%</strong>
@@ -109,9 +126,9 @@
       <section class="section-block recent-work" id="work">
         <div class="section-head"><h2>Recent Work</h2><a href="#work">View all posts →</a></div>
         <div class="work-grid">
-          <article class="work-card"><img src="Screenshot_20260912_212828_Instagram.jpg" alt=""><span class="reel-mark">◧</span></article>
-          <article class="work-card"><img src="Screenshot_20260912_212849_Instagram.jpg" alt=""><span class="reel-mark">◧</span></article>
-          <article class="work-card"><img src="Screenshot_20260912_212902_Instagram.jpg" alt=""><span class="reel-mark">◧</span></article>
+          <article class="work-card"><img src="/acl-on-feed/Screenshot_20260912_212828_Instagram.jpg" alt=""><span class="reel-mark">◧</span></article>
+          <article class="work-card"><img src="/acl-on-feed/Screenshot_20260912_212849_Instagram.jpg" alt=""><span class="reel-mark">◧</span></article>
+          <article class="work-card"><img src="/acl-on-feed/Screenshot_20260912_212902_Instagram.jpg" alt=""><span class="reel-mark">◧</span></article>
         </div>
       </section>
 

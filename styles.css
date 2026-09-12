@@ -456,3 +456,143 @@ button{font:inherit}
   .feature-icon,.mission-icon{width:30px;height:30px;flex-basis:30px;border-radius:10px}
   .feature-icon svg,.mission-icon svg{width:16px;height:16px}
 }
+
+
+/* Site-wide adaptive dark theme */
+:root{color-scheme:light dark}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --text:#f5f7fb;
+    --muted:#9ba4b4;
+    --line:#282d36;
+    --bg:#0f1115;
+    --card:#15181e;
+    --blue:#3aa7ff;
+    --violet:#aa78ff;
+    --pink:#f06acb;
+  }
+
+  html,body{background:#0f1115;color:var(--text)}
+  body{background:var(--bg)}
+  .app-shell{background:var(--bg)}
+
+  .desktop-sidebar,
+  .desktop-rail,
+  .topbar{
+    background:#111419;
+    border-color:var(--line);
+  }
+  .sidebar-brand span,
+  .brand-title span,
+  .section-head a,
+  .hero-copy-ref>p:not(.eyebrow),
+  .benchmark-head p,
+  .profile-copy small,
+  .stats-card small,
+  .rail-card p,
+  .rail-footer,
+  .benchmark-source{
+    color:var(--muted);
+  }
+
+  .sidebar-nav a{color:#b8c0cc}
+  .sidebar-nav a:hover{background:#191d24;color:#fff}
+  .sidebar-nav a.active{background:#1d222b;color:#fff}
+  .sidebar-note{
+    background:linear-gradient(135deg,rgba(240,106,203,.10),rgba(170,120,255,.12));
+    border-color:#2b2735;
+  }
+
+  .main-column{
+    background:
+      radial-gradient(circle at 68% 10%,rgba(170,120,255,.06),transparent 26%),
+      radial-gradient(circle at 84% 20%,rgba(240,106,203,.05),transparent 24%),
+      var(--bg);
+  }
+  .hero-ref{
+    background:
+      radial-gradient(circle at 70% 32%,rgba(240,106,203,.10),transparent 25%),
+      radial-gradient(circle at 82% 55%,rgba(170,120,255,.10),transparent 32%);
+  }
+  .hero-copy-ref h1 span{
+    background:linear-gradient(90deg,#f07bd5,#a678ff);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .secondary-btn{background:#20242c;color:#f4f6f8}
+  .primary-btn{background:#148df0}
+
+  .glass-card{
+    background:rgba(24,28,35,.92);
+    border-color:#2b313b;
+    box-shadow:0 12px 28px rgba(0,0,0,.28);
+  }
+  .hero-stack:before{
+    background:linear-gradient(160deg,#1a1722,#191d2a);
+    box-shadow:0 20px 50px rgba(0,0,0,.30);
+  }
+
+  .benchmark-panel,
+  .profile-card,
+  .rail-card{
+    background:var(--card);
+    border-color:var(--line);
+    box-shadow:0 8px 24px rgba(0,0,0,.16);
+  }
+  .benchmark-chip{background:#20242c;color:#d8dee8}
+  .bench-track{background:#252a33}
+  .bench-item strong{color:#b6bfcc}
+  .bench-item.top strong{color:#d98bff}
+
+  .profile-card{color:var(--text)}
+  .profile-arrow{color:#aeb6c4}
+
+  .logo-marquee{
+    background:#08090b;
+    border-color:#22262d;
+  }
+  .logo-marquee::before{background:linear-gradient(90deg,#08090b 25%,transparent)}
+  .logo-marquee::after{background:linear-gradient(270deg,#08090b 25%,transparent)}
+
+  .rail-cta,
+  .contact-card a{
+    background:#f3f5f7;
+    color:#101217;
+  }
+  .contact-card{
+    background:linear-gradient(135deg,rgba(240,106,203,.12),rgba(170,120,255,.12));
+  }
+  .rail-card h3,
+  .stats-card b{color:var(--text)}
+
+  .mobile-bottom{
+    background:#111419;
+    border-color:var(--line);
+  }
+  .mobile-bottom a{color:#aeb6c4}
+  .mobile-bottom a.active{color:#fff}
+
+  /* Keep colorful icon language vivid on dark surfaces */
+  .nav-home{color:#b89cff;background:#2a213e}
+  .nav-brands{color:#ff8ed9;background:#3a2033}
+  .nav-insights{color:#6fc0ff;background:#16334a}
+  .nav-partners{color:#ffb267;background:#3a2a18}
+  .nav-contact{color:#63d99f;background:#17372a}
+
+  .followers-icon{color:#b89cff;background:#2a213e}
+  .reach-icon{color:#ff8b95;background:#3b2024}
+  .engagement-icon{color:#6fc0ff;background:#16334a}
+  .audience-icon{color:#63d99f;background:#17372a}
+
+  .idea-icon{color:#b89cff;background:#2a213e}
+  .community-icon{color:#ff8ed9;background:#3a2033}
+  .results-icon{color:#6fc0ff;background:#16334a}
+  .chip-icon{color:#6fc0ff;background:#16334a}
+
+  .verified-tick{background:#2ea7ff}
+}
+
+@media (prefers-color-scheme: dark) and (max-width:920px){
+  .topbar{background:#111419}
+  .main-column{background:var(--bg)}
+}

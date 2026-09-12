@@ -411,3 +411,48 @@ button{font:inherit}
 .reach-icon{color:#ff5a66;background:#fff0f1}
 .engagement-icon{color:#1597f4;background:#eaf6ff}
 .audience-icon{color:#16a36a;background:#eaf8f1}
+
+/* Unified colorful icon language */
+.nav-icon{
+  width:30px;height:30px;flex:0 0 30px;border-radius:10px;
+  display:inline-grid;place-items:center;
+}
+.nav-icon svg,.feature-icon svg,.mission-icon svg,.chip-icon svg{
+  width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;
+}
+.nav-home{color:#6f4cff;background:#f0ecff}
+.nav-brands{color:#e04bb7;background:#fff0fa}
+.nav-insights{color:#148df0;background:#eaf5ff}
+.nav-partners{color:#f08b20;background:#fff4e8}
+.nav-contact{color:#16a36a;background:#eaf8f1}
+.sidebar-nav a span{font-size:inherit;width:auto;text-align:initial}
+.mobile-bottom .nav-icon{width:28px;height:28px;flex-basis:28px;border-radius:9px}
+.mobile-bottom .nav-icon svg{width:16px;height:16px}
+.mobile-bottom a.active .nav-icon{box-shadow:0 0 0 1px rgba(0,0,0,.03)}
+
+.feature-icon,.mission-icon{
+  width:34px;height:34px;display:inline-grid;place-items:center;border-radius:11px;flex:0 0 34px;
+  -webkit-background-clip:initial;background-clip:initial;color:inherit;
+}
+.feature-icon svg,.mission-icon svg{width:18px;height:18px}
+.idea-icon{color:#7c4dff;background:#f0ebff}
+.community-icon{color:#e24fb7;background:#fff0fa}
+.results-icon{color:#1597f4;background:#eaf6ff}
+.glass-card{grid-template-columns:34px 1fr}
+.glass-card span{font-size:inherit;background:none;-webkit-background-clip:initial;color:inherit}
+
+.benchmark-chip{display:inline-flex;align-items:center;gap:6px}
+.chip-icon{
+  width:22px;height:22px;border-radius:8px;display:grid;place-items:center;
+  color:#1597f4;background:#eaf6ff;
+}
+.chip-icon svg{width:13px;height:13px}
+
+.mission-points i{font-style:normal;font-size:inherit;color:inherit}
+.mission-points span{gap:10px}
+
+@media(max-width:760px){
+  .nav-icon{width:28px;height:28px}
+  .feature-icon,.mission-icon{width:30px;height:30px;flex-basis:30px;border-radius:10px}
+  .feature-icon svg,.mission-icon svg{width:16px;height:16px}
+}

@@ -338,3 +338,24 @@ footer{max-width:1600px;margin:0 auto;background:#fff}
   .mini-benchmark{margin-top:0}
   .hero-proof.benchmark-hero{min-height:0;box-shadow:none}
 }
+
+
+/* Phase 8: real brand identity in benchmark */
+.mini-brand{display:flex;align-items:center;gap:10px;min-width:0}
+.mini-brand>span:last-child{display:flex;flex-direction:column;min-width:0}
+.mini-brand b{font:800 12px Manrope,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mini-brand small{margin-top:2px;font-size:8px;color:#8e8e8e;white-space:nowrap}
+.mini-logo{width:36px;height:36px;border-radius:50%;overflow:hidden;flex:0 0 auto;background:#111;border:1px solid #30343b;box-shadow:0 0 0 2px #fff0}
+.mini-logo img{width:100%;height:100%;object-fit:cover}
+.mini-row.winner .mini-logo{box-shadow:0 0 0 2px #fff,0 0 0 4px #ee2a7b}
+.mini-row.winner .mini-brand small{color:#b7bdc5}
+
+@media(max-width:700px){
+  .mini-row{grid-template-columns:minmax(126px,1.25fr) minmax(70px,1fr) 42px;gap:9px}
+  .mini-brand{gap:8px}
+  .mini-logo{width:34px;height:34px}
+  .mini-brand b{font-size:10px}
+  .mini-brand small{font-size:7.5px}
+  .mini-row>i{height:7px}
+  .mini-row>strong{font-size:10px}
+}

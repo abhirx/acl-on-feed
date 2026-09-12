@@ -140,3 +140,15 @@ body{background:#fff}
   .aud-card,.partner-card{padding:14px}
   .bottom-nav{height:62px!important}
 }
+
+/* Profile colorful icon language */
+.profile-nav-icon{
+  width:30px;height:30px;border-radius:10px;display:grid;place-items:center;
+}
+.profile-nav-icon svg{
+  width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;
+}
+.pni-insights{color:#1597f4;background:#eaf6ff}
+.pni-audience{color:#16a36a;background:#eaf8f1}
+.pni-partners{color:#f08b20;background:#fff4e8}
+.bottom-nav button{font-size:inherit}

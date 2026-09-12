@@ -396,3 +396,18 @@ button{font:inherit}
 .mobile-bottom a:not(.active) .nav-icon{
   color:#737b89;
 }
+
+/* Colorful key-stat icons */
+.stats-card>div{gap:13px}
+.stat-icon{
+  width:36px;height:36px;flex:0 0 36px;border-radius:11px;
+  display:grid;place-items:center;
+}
+.stat-icon svg{
+  width:20px;height:20px;fill:none;stroke:currentColor;
+  stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;
+}
+.followers-icon{color:#7c4dff;background:#f0ebff}
+.reach-icon{color:#ff5a66;background:#fff0f1}
+.engagement-icon{color:#1597f4;background:#eaf6ff}
+.audience-icon{color:#16a36a;background:#eaf8f1}

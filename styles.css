@@ -197,3 +197,59 @@ button{font:inherit}
   .bench-item{grid-template-columns:32px 88px minmax(54px,1fr) 44px;gap:7px}
   .bench-avatar{width:32px;height:32px}
 }
+
+
+/* Refinement: benchmark source + verified media brand cards */
+.benchmark-source{
+  margin:14px 0 0;
+  padding-top:12px;
+  border-top:1px solid var(--line);
+  font-size:9px;
+  color:#8a91a0;
+}
+.profile-card{
+  grid-template-columns:62px 1fr auto;
+  grid-template-rows:auto auto;
+}
+.profile-copy b{
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.verified-tick{
+  width:15px;
+  height:15px;
+  border-radius:50%;
+  display:inline-grid;
+  place-items:center;
+  flex:0 0 auto;
+  background:#0095f6;
+  color:#fff;
+  font:700 9px/1 Arial,sans-serif;
+  font-style:normal;
+}
+.profile-stat{
+  grid-column:2 / 3;
+}
+.profile-arrow{
+  grid-column:3;
+  grid-row:1 / span 2;
+}
+.profile-divider{display:none}
+
+@media(max-width:760px){
+  .profile-card{
+    grid-template-columns:48px 1fr auto;
+    grid-template-rows:auto auto;
+  }
+  .verified-tick{
+    width:14px;
+    height:14px;
+    font-size:8px;
+  }
+  .benchmark-source{
+    font-size:8px;
+    margin-top:12px;
+    padding-top:10px;
+  }
+}

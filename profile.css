@@ -152,3 +152,83 @@ body{background:#fff}
 .pni-audience{color:#16a36a;background:#eaf8f1}
 .pni-partners{color:#f08b20;background:#fff4e8}
 .bottom-nav button{font-size:inherit}
+
+
+/* Adaptive dark theme for media profile pages */
+:root{color-scheme:light dark}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --text:#f5f7fb;
+    --muted:#9ba4b4;
+    --line:#282d36;
+    --blue:#3aa7ff;
+    --bg:#0f1115;
+    --soft:#171a20;
+    --card:#15181e;
+  }
+
+  html,body{background:var(--bg);color:var(--text)}
+  body{background:#0f1115}
+  .profile-shell{background:#0f1115}
+
+  .profile-topbar,
+  .tabs,
+  .tab-btn,
+  .bottom-nav,
+  .bottom-nav button{
+    background:#111419;
+    border-color:var(--line);
+    color:#dce2ea;
+  }
+  .profile-topbar{background:#111419}
+  .profile-topbar a,.profile-topbar strong,.profile-topbar .more{color:#f7f8fa}
+
+  .profile-header{border-color:var(--line)}
+  .identity-row h1{color:#fff}
+  .handle,
+  .stat-row small,
+  .metric-card h3,
+  .metric-card p,
+  .source,
+  .partner-card p{
+    color:var(--muted);
+  }
+  .stat-row b{color:#fff}
+
+  .btn.secondary{background:#23272f;color:#f4f6f8}
+  .btn.primary{background:#148df0;color:#fff}
+
+  .tabs{border-color:var(--line)}
+  .tab-btn{color:#8f98a7}
+  .tab-btn.active{color:#fff;border-color:#fff}
+
+  .metric-card,
+  .aud-card,
+  .partner-card{
+    background:var(--card);
+    border-color:var(--line);
+    color:#f6f7f9;
+  }
+  .metric-card.big{background:var(--card);color:#fff}
+  .metric-card strong,
+  .metric-card.big strong,
+  .metric-grid .metric-card strong,
+  .aud-card h3,
+  .partner-card h3{
+    color:#fff;
+  }
+
+  .track{background:#242a33}
+  .track i{background:#2ea7ff}
+  .partner-card .tag{background:#242931;color:#b7c0cd}
+
+  .pni-insights{color:#6fc0ff;background:#16334a}
+  .pni-audience{color:#63d99f;background:#17372a}
+  .pni-partners{color:#ffb267;background:#3a2a18}
+
+  .bottom-nav{border-color:var(--line)}
+  .bottom-nav button{color:#9aa4b3}
+  .bottom-nav button.active{color:#fff}
+  .verify{background:#2ea7ff}
+}

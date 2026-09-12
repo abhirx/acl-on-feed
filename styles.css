@@ -349,3 +349,61 @@ button{font:inherit}
   .logo-track{animation:none}
   .logo-marquee{overflow-x:auto}
 }
+
+
+/* Marquee v2: guaranteed horizontal movement and uniform logo sizing */
+.logo-marquee{
+  overflow:hidden !important;
+  width:100%;
+  white-space:nowrap;
+}
+.logo-track{
+  display:flex !important;
+  flex-direction:row !important;
+  align-items:center;
+  width:max-content;
+  gap:0;
+  animation:brand-marquee-v2 24s linear infinite;
+}
+.logo-group{
+  display:flex !important;
+  flex-direction:row !important;
+  align-items:center;
+  gap:22px;
+  flex:none;
+  padding-right:22px;
+}
+.brand-logo-item{
+  width:108px;
+  height:48px;
+  flex:0 0 108px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:6px 10px;
+  background:transparent;
+  border:0;
+}
+.brand-logo-item img{
+  display:block;
+  max-width:88px;
+  max-height:30px;
+  width:auto;
+  height:auto;
+  object-fit:contain;
+}
+@keyframes brand-marquee-v2{
+  from{transform:translate3d(0,0,0)}
+  to{transform:translate3d(-50%,0,0)}
+}
+.logo-marquee:hover .logo-track{animation-play-state:paused}
+@media(max-width:760px){
+  .logo-group{gap:16px;padding-right:16px}
+  .brand-logo-item{width:86px;height:40px;flex-basis:86px;padding:4px 6px}
+  .brand-logo-item img{max-width:72px;max-height:24px}
+  .logo-track{animation-duration:20s}
+}
+@media(prefers-reduced-motion:reduce){
+  .logo-track{animation:none}
+  .logo-marquee{overflow-x:auto !important}
+}
